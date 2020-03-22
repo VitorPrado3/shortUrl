@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ProjetoURL
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: vitor
+Implementation-Vendor-Id: br.com.fattoria
+Build-Jdk: 1.8.0_241
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ProjetoURL
+Created-By: Maven Integration for Eclipse
+
