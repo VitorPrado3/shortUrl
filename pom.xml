@@ -81,7 +81,7 @@
 			<artifactId>jquery</artifactId>
 			<version>3.4.1</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>font-awesome</artifactId>
@@ -108,7 +108,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>0.5.1</version>
+				<configuration>
+					<appName>${heroku.appName}</appName>
+				</configuration>
+			</plugin>
+
 		</plugins>
+
+
+
 	</build>
 
 	<repositories>
