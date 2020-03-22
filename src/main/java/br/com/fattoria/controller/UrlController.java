@@ -94,7 +94,7 @@ public class UrlController {
 				mv = new ModelAndView ("index");
 			}catch (Exception ex) {
 				mv.addObject("msg", "Erro");
-				
+				mv = new ModelAndView ("alterar");
 			}
 			
 
