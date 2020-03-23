@@ -21,7 +21,8 @@
 	<a href="#" class="close" data-dismiss="alert">x</a>
 	<i class="fas fa-info-circle mr-2"></i>${msg}
 	</div>
-
+	
+	
 	<form method="post" action="/alterar/alterar" id="formUrl">
 		
 		<br/>ID<br/>
@@ -30,7 +31,7 @@
 		<br/>URL<br/>
 		<input id="url" name="url" type="text" value="${url.url}"  required class="form-control"/>
 		<br /> URL Encurtada: <span id="shortUrl"></span>
-		<input type="hidden" value="${url.urlencurtada}" id="shorturl_hidden" name="shorturl_hidden" required> <br />
+		<input type="hidden" value="" id="shorturl_hidden" name="shorturl_hidden" required> <br />
 	</form>
 	
 	<button onClick="getShortUrl()" class="btn btn-info mt-2">Gerar nova URL</button>

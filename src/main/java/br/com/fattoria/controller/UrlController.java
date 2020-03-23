@@ -58,6 +58,7 @@ public class UrlController {
 			List<Url> lista = (List<Url>) udao.findAll();
 			mv.addObject("msg", "Exclusão pelo ID");
 			mv.addObject("lista", lista);
+			
 		}catch (Exception ex) {	
 		}
 		return mv;
@@ -85,16 +86,16 @@ public class UrlController {
 				@RequestParam String url,
 				@RequestParam String shorturl_hidden
 				) {
-			ModelAndView mv = new ModelAndView("alterar2");
+			ModelAndView mv = new ModelAndView("index");
 			try {
 				Url u = new Url(new Long(idurl), url, shorturl_hidden);
 				udao.save(u);
 				mv.addObject("lista", udao.findAll());
 				mv.addObject("msg", "Dados alterados");
-				mv = new ModelAndView ("index");
+				
 			}catch (Exception ex) {
 				mv.addObject("msg", "Erro");
-				mv = new ModelAndView ("alterar");
+				
 			}
 			
 
